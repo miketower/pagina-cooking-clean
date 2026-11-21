@@ -98,7 +98,7 @@ h3 { margin-bottom: .55rem; font-size: 1.19rem; line-height: 1.22; }
 .site-footer .brand { flex-basis: 12rem; }
 
 @media (max-width: 760px) {
-  :root { --header-clearance: 8.5rem; }
+  :root { --header-clearance: 9.5rem; }
   .header-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
   .header-inner .brand { max-width: 13rem; }
   .header-inner nav { order: 1; grid-column: 1 / -1; justify-content: space-between; padding-top: .65rem; border-top: 1px solid var(--line); }
@@ -118,4 +118,28 @@ h3 { margin-bottom: .55rem; font-size: 1.19rem; line-height: 1.22; }
   .comparison img[data-scroll-distance] {
     transform: translateY(var(--scroll-shift, 0px)) scale(1.2);
   }
+}
+
+.case-outcome { margin: .8rem 0 0; }
+
+.clients { background: #f3f7fa; }
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: .75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.client-list li {
+  padding: .85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .4rem;
+  background: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .header-inner nav { gap: .5rem; }
+  .header-inner nav a { font-size: .82rem; }
 }
