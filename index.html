@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="scroll.js" defer></script>
   <script src="comparison.js" defer></script>
+  <script src="chat.js" defer></script>
 </head>
 <body id="inicio">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -21,7 +22,7 @@
         <a href="#resultados">Resultados</a>
         <a href="#clientes">Clientes</a>
       </nav>
-      <a class="button button-small" href="#prueba">Prueba sin costo <span aria-hidden="true">↗</span></a>
+      <a class="button button-small" href="https://wa.me/528110601127">Prueba sin costo <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
@@ -32,7 +33,7 @@
         <h1 id="hero-title" data-scroll-distance="36">Limpieza profunda para cocinas profesionales<span>.</span></h1>
         <p class="hero-description" data-scroll-distance="24">Recupera utensilios afectados por grasa, cochambre y carbonización con un sistema de limpieza por inmersión.</p>
         <div class="actions">
-          <a class="button" href="#prueba">Solicita una prueba <span aria-hidden="true">↗</span></a>
+          <a class="button" href="https://wa.me/528110601127">Solicita una prueba <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="#sistema">Conoce el sistema <span aria-hidden="true">↓</span></a>
         </div>
       </div>
@@ -121,8 +122,7 @@
       </div>
       <figure class="pan-comparison">
         <figcaption>
-          <h3>Compara el sartén antes y después</h3>
-          <p>Imágenes generadas para ilustrar la diferencia entre un sartén con grasa incrustada y uno limpio.</p>
+          <h3>Comparación ilustrativa del sartén</h3>
         </figcaption>
         <div class="pan-view">
           <img src="assets/sarten-despues.webp" width="768" height="1024" alt="Sartén de acero inoxidable limpio" loading="lazy">
@@ -157,7 +157,7 @@
         <p class="eyebrow">Tu mejor aliado</p>
         <h2 data-scroll-distance="16">Solicita una prueba sin costo</h2>
         <p>Conoce lo que BIO-3000 puede hacer por los utensilios de tu cocina.</p>
-        <a class="button" href="https://cookingclean.mx/">Visita cookingclean.mx <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://wa.me/528110601127">Solicita tu prueba por WhatsApp <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -166,5 +166,30 @@
     <a class="brand" href="#inicio"><img src="assets/logo.png" width="820" height="71" alt="Cooking Clean" loading="lazy"></a>
     <a href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a>
   </footer>
+  <div class="chat-widget">
+    <section id="product-chat" class="chat-panel" aria-labelledby="chat-title" hidden>
+      <header class="chat-header">
+        <h2 id="chat-title">Chat de Cooking Clean</h2>
+        <button class="chat-close" type="button" aria-label="Cerrar chat">×</button>
+      </header>
+      <div class="chat-log" role="log" aria-label="Conversación" aria-live="polite" tabindex="0">
+        <p>¡Hola! Puedo ayudarte con preguntas sobre el sistema BIO-3000.</p>
+      </div>
+      <div class="chat-suggestions" aria-label="Preguntas sugeridas">
+        <button type="button">¿Cómo funciona?</button>
+        <button type="button">¿Qué incluye el servicio?</button>
+        <button type="button">¿Cómo solicito una prueba?</button>
+      </div>
+      <form class="chat-form">
+        <input name="question" aria-label="Tu pregunta" placeholder="Escribe tu pregunta" maxlength="300" autocomplete="off" required>
+        <button type="submit">Enviar</button>
+      </form>
+      <a class="chat-contact" href="https://wa.me/528110601127">Hablar por WhatsApp ↗</a>
+    </section>
+    <div class="chat-invitation" role="status"></div>
+    <button class="chat-toggle" type="button" aria-controls="product-chat" aria-expanded="false" hidden>
+      <span class="chat-icon" aria-hidden="true">···</span> Chat
+    </button>
+  </div>
 </body>
 </html>
