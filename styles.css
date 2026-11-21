@@ -132,11 +132,18 @@ h3 { margin-bottom: .55rem; font-size: 1.19rem; line-height: 1.22; }
   list-style: none;
 }
 .client-list li {
-  padding: .85rem 1rem;
+  display: grid;
+  place-items: center;
+  min-height: 7rem;
+  padding: 1rem;
   border: 1px solid var(--line);
   border-radius: .4rem;
   background: #fff;
-  font-weight: 700;
+}
+.client-list img {
+  width: auto;
+  height: auto;
+  max-height: 4.5rem;
 }
 
 @media (max-width: 760px) {
