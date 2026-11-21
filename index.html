@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Conoce BIO-3000, el sistema de Cooking Clean para limpiar y desincrustar utensilios en cocinas profesionales.">
   <title>Cooking Clean | Sistema BIO-3000</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
   <script src="scroll.js" defer></script>
+  <script src="comparison.js" defer></script>
 </head>
 <body id="inicio">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -117,6 +119,20 @@
           </div>
         </article>
       </div>
+      <figure class="pan-comparison">
+        <figcaption>
+          <h3>Compara el sartén antes y después</h3>
+          <p>Imágenes generadas para ilustrar la diferencia entre un sartén con grasa incrustada y uno limpio.</p>
+        </figcaption>
+        <div class="pan-view">
+          <img src="assets/sarten-despues.webp" width="768" height="1024" alt="Sartén de acero inoxidable limpio" loading="lazy">
+          <img class="pan-before" src="assets/sarten-antes.webp" width="768" height="1024" alt="Sartén de acero inoxidable con grasa incrustada" loading="lazy">
+          <span class="pan-label pan-label-before" aria-hidden="true">Antes</span>
+          <span class="pan-label pan-label-after" aria-hidden="true">Después</span>
+          <div class="pan-divider" aria-hidden="true"><span>‹ ›</span></div>
+          <input class="pan-range" type="range" min="0" max="100" value="50" aria-label="Comparar el sartén antes y después" aria-valuetext="50 % antes, 50 % después" hidden>
+        </div>
+      </figure>
     </section>
 
     <section id="clientes" class="clients">

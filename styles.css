@@ -150,3 +150,71 @@ h3 { margin-bottom: .55rem; font-size: 1.19rem; line-height: 1.22; }
   .header-inner nav { gap: .5rem; }
   .header-inner nav a { font-size: .82rem; }
 }
+
+.pan-comparison {
+  max-width: 43rem;
+  margin: clamp(2.5rem, 5vw, 4rem) auto 0;
+}
+.pan-comparison h3 { font-size: clamp(1.45rem, 3vw, 2rem); }
+.pan-comparison p { color: var(--mute); }
+.pan-view {
+  --split: 50%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: .65rem;
+  background: #344858;
+}
+.pan-view img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.pan-before {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--split)) 0 0);
+}
+.pan-label {
+  position: absolute;
+  bottom: .8rem;
+  padding: .3rem .65rem;
+  border-radius: .25rem;
+  color: #fff;
+  background: var(--navy);
+  font-size: .85rem;
+  font-weight: 700;
+}
+.pan-label-before { left: .8rem; }
+.pan-label-after { right: .8rem; }
+.pan-divider {
+  position: absolute;
+  inset-block: 0;
+  left: var(--split);
+  display: grid;
+  place-items: center;
+  width: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.pan-divider span {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: var(--navy);
+  background: var(--orange);
+  font-size: 1.35rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.pan-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  touch-action: pan-y;
+}
+.pan-view:focus-within { outline: 3px solid var(--blue); outline-offset: 4px; }
